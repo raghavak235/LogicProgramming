@@ -9,4 +9,13 @@ def odd_or_even(n):
     else:
         print("Invalid Number")
 
-odd_or_even(n=3)
+
+
+
+# updated version
+
+def single_line():
+    n = int(input('Enter the value'))
+    # single line if else condition
+    # value if condition true else value
+    print("invalid" if n < 0 else ("even" if n%2==0 else "odd"))
