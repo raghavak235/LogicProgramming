@@ -13,3 +13,4 @@ import re
 def email_seq():
     m = re.fullmatch('[a-z]+[0-9|_]@gmail[.]com',input())
     print("true" if m != None else "false")
+    
