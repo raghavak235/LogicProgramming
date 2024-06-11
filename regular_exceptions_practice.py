@@ -29,6 +29,17 @@ mat
 pat
 bat
 '''
+emails = '''
+CoreyMSchafer@gmail.com
+corey.schafer@university.edu
+corey-321-schafer@my-work.net
+'''
+urls = '''
+https://www.google.com
+http://coreyms.com
+https://youtube.com
+https://www.nasa.gov
+'''
 
 #
 # .       - Any Character Except New Line
@@ -137,4 +148,20 @@ sentence =  'Start a sentence'
 #     print(match)
 #
 
+#
+# pattern = re.compile(r'[a-zA-Z0-9.-]+@+[a-zA-Z-]+\.+(com|edu|net)')
+#
+# matches = pattern.finditer(emails)
+#
+# for match in matches:
+#     print(match)
 
+# pattern = re.compile(r'https?://(www\.)?[a-z]+\.+(com|gov)')
+#
+# matches = pattern.finditer(urls)
+#
+# for match in matches:
+#     print(match.group(2))
+#
+#
+# matches = pattern.search(sentence)
