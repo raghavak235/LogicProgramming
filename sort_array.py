@@ -9,7 +9,7 @@ def sort_list():
     sort_array=[]
     for i in range(len(n)):
         for j in range(i+1, len(n)):
-            if n[j] < n[i]:
+            if n[j] < n[i]:# here we are verifying if the second value is < than 1st because we need to sort ASC
                 temp = n[j]
                 n[j] = n[i]
                 n[i] = temp
