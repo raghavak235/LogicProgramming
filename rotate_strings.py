@@ -1,23 +1,17 @@
-# Rotate String
-# Given two strings s and goal, return true if and only if s can become goal after
-# some number of shifts on s.
-# A shift on s consists of moving the leftmost character of s to the rightmost
-# position.
-# For example, if s = "abcde", then it will be "bcdea" after one shift.
-# abcde
-# bcdea
-# cdeab
-# deabc
-# eabcd
-# x and y
-# abcde
-# bcdea
-# abcdeabcde
-# bcdea
+# The problem is to rotate the string by k steps.
+#
+# This video will tell you how to take both the string and the number of characters by which you want to rotate the string as input from the console and then perform the left as well as the right rotation by that number of characters.
 
 
-def rotate_string():
-    s1= input()
-    s2= input()
-    if s2 in s1 + s2:
-        print(True)
+def rotate_strings_byk(string, n):
+
+    #python -> py thon -> thonpy
+    left_first = string[0:n]
+    left_remaining= string[n:]
+    print(left_remaining+left_first)
+
+    # python -> pyth on -> onpytho
+    right_remains=string[-n:]
+    right_first = string[0:-n]
+
+    print(right_remains+right_first)
