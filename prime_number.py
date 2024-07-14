@@ -22,4 +22,12 @@ def prime_number():
                 break
 
 
-prime_number()
+def prime_number_lbp(n):
+    f=0
+    for i in range(1,n+1):
+        if n%i == 0:
+            f=f+1
+
+    return f==2
+
+print(prime_number_lbp(9))
